@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* Text color */
+.colr																		
+{color:#fff !important;}
+.black																		
+{color:#000 !important;}
+.txthover:hover																
+{color:#af0101 !important;}
+.backcolr																	
+{background-color:#3498DB !important;}
+.backcolrhover:hover														
+{background-color:#2980B9 !important;}
+.backcolrdark																
+{background-color:#af0101 !important; background-image:url(../images/dark.png);}
+.bordercolr																	
+{border-color:#3498DB !important;}
+/* Navigation */
+.ddsmoothmenu ul li a:hover, .ddsmoothmenu ul li.current-menu-item a		
+{background-color:#3498DB;}
+/* Feedlist thumb hover */
+.feedlist ul li:hover a.thumb												
+{border-left:#3498DB solid 5px;}
+/* Announcement */
+.navigation .announcment:hover a.mlink										
+{color:#3498DB;}
+/* Gallery Filter */
+ul#filterOptions li a:hover													
+{background: #3498DB;}
+ul#filterOptions li.active a												
+{background: #3498DB;}
+/* Sponsers Buttons */
+.sponsers #controls a.prevBtn:hover, .sponsers #controls a.nextBtn:hover	
+{background-color:#3498DB;}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>QuanLyHoatDongTuThien</display-name>
+	<welcome-file-list>
+		<welcome-file>toTrangChu.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+	<!-- Begin Struts 1 config -->
+	<servlet>
+		<servlet-name>StrutsController</servlet-name>
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StrutsController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<!-- End Struts 1 config -->
+
+	<servlet>
+		<description></description>
+		<display-name>UpHinhAction</display-name>
+		<servlet-name>UpHinhAction</servlet-name>
+		<servlet-class>action.UpHinhAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpHinhAction</servlet-name>
+		<url-pattern>/UpHinhAction</url-pattern>
+	</servlet-mapping>
+
+</web-app>
